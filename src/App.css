@@ -1,38 +1,102 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  position: relative;
+  height: 100vh;
+}
+
+
+/*---- LogIn and SignUp Form ---- */
+
+
+.login_form_div {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  background-color: #fff;
+  width: 450px;
+  height: auto;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.login_form_div h2 {
+  font-size: 30px;
+  margin: 30px 0 20px;
   text-align: center;
+  color: #181818;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login_form_div h3 {
+  font-size: 22px;
+  color: rgb(188, 41, 41);
+  text-align: center;
+  margin: 0 0 15px 0;
+  background-color: rgb(238, 204, 204);
+  padding: 10px 0;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login_form_div .login_form {
+  width: 80%;
+  margin: auto;
+  height: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.login_form_div .login_form form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  /* border: 0; */
 }
 
-.App-link {
-  color: #61dafb;
+.login_form form input::placeholder {
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn_div button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0563b4;
+  border-radius: 5px;
+  border: none;
+}
+
+.loginGoogle_div {
+  background-color: aliceblue;
+}
+
+.login_form h4 {
+  margin: 20px 0 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.another_class{
+  width: auto;
+}
+
+.btn{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 20px;
 }
